@@ -1,19 +1,9 @@
-import { Component, OnInit } from '@angular/core';
 import { Component, ViewChild } from '@angular/core';
 import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 
-@Component({
-  selector: 'app-homeslider',
-  templateUrl: './homeslider.component.html',
-  styleUrls: ['./homeslider.component.css']
-})
-export class HomesliderComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+@Component({selector: 'ngbd-carousel-pause', templateUrl: './carousel-pause.html'})
+export class NgbdCarouselPause {
   images = [1, 2, 3, 4, 5, 6, 7].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
 
   paused = false;

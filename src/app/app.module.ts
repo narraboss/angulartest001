@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { HomesliderComponent } from './homeslider/homeslider.component';
+import { NgbdCarouselPause } from './ngbd-carousel-pause/ngbd-carousel-pause.component';
 
 @NgModule({
   imports: [
@@ -20,9 +20,9 @@ import { HomesliderComponent } from './homeslider/homeslider.component';
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    HomesliderComponent
+    NgbdCarouselPause
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 
